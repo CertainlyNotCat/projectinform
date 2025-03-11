@@ -1,4 +1,7 @@
 /* Общие стили */
+html {
+    position: relative;
+    }
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -16,50 +19,53 @@ body {
     align-items: center;
 }
 
-.section:nth-child(even) .section-image {
-    order: -1;
+.header__1{
+    font-size: 70px;
+    text-align: center;
 }
 
-.section-content {
-    padding: 20px;
+.header__2{
+    font-size: 40px;
+    text-align: center;
 }
 
-.section-title {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    margin-bottom: 25px;
-    position: relative;
+.var_1__header{
+    font-size: 30px;
+    text-align: center;
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: #3498db;
+.var_2__header{
+    font-size: 30px;
+    text-align: center;
 }
 
-.section-text {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 30px;
+.var_3__header{
+    font-size: 30px;
+    text-align: center;
 }
 
-.section-image {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+.soc-icons {
+    width: 180px;
+    align-content: center;
 }
 
-.section-image:hover {
-    transform: translateY(-5px);
+.var_1__inscription{
+    font-size: 25px;
+    text-align: center;
 }
 
-.section-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+.var_2__inscription{
+    font-size: 25px;
+    text-align: center;
 }
+
+.var_3__inscription{
+    font-size: 25px;
+    text-align: center;
+}
+
+.register__big_header{
+    font-size: 50px;
+    text-align: center;
+}
+
