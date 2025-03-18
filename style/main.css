@@ -9,6 +9,54 @@ body {
     color: #333;
 }
 
+.main-nav {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.nav-list {
+    
+    display: inline-flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #636e72;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0984e3;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #2d3436;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #0984e3;
+    font-weight: 500;
+}
+
 .section {
     padding: 80px 20px;
     max-width: 1200px;
@@ -48,14 +96,18 @@ body {
 }
 
 .footer {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.big_very__social-links {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.soc-icons {
+.big__soc-icons {
     width: 500px;
-    align-content: center;
 }
 
 .var_1__inscription{
@@ -185,4 +237,39 @@ body {
     gap: 50px;
     align-items: center;
     background-color: aqua;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+    fill: black;
+    transition: all 0.3s ease;
+}
+
+
+/*
+.social-link:hover .social-icon {
+    fill: #3498db;
+    transform: translateY(-3px);
+}
+*/
+
+
+/* Адаптивность */
+
+@media (max-width: 480px) {
+    .social-links {
+        gap: 20px;
+    }
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
 }
