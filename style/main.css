@@ -273,3 +273,45 @@ body {
         height: 35px;
     }
 }
+
+.feedback_header{
+    font-size: 50px;
+    text-align: center;
+}
+
+.icon_feedback{
+    width: 100px;
+    height: 100px;
+}
+
+.feedback{
+    font-size: 40px;
+    display: flex;
+}
+
+.feedback_text{
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+  
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+  
+.product-image {
+    width: 80px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 10px;
+}
